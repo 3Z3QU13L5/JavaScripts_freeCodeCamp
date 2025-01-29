@@ -1,5 +1,6 @@
 // Requiring module
 const express = require('express');
+const homepage = require('./')
 
 // Creating express object
 const app = express();
@@ -14,4 +15,5 @@ app.get('/', (req, res) => {
 const PORT = process.env.PORT || 5000;
 
 // Serve Setup
-app.listen(PORT, console.log(`Server started on port ${PORT}`));
+app.listen(PORT, pyramidGenerator);
+// Investigate how to display homepage
